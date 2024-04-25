@@ -16,6 +16,7 @@ body {
 $Clr-light: #fff;
 $Clr-dark: #000;
 $txt-clr-light: #898989;
+$txt-clr-light: #898989;
 $txt-clr-dark: #fff;
 $button-bg-light:rgba(0,
 0,
@@ -48,7 +49,7 @@ p {
 .hero-container {
     width: 100%;
     max-width: 900px;
-    padding: 12% 0%;
+    padding: 17% 0%;
     h1 {
         font-size: 44px;
         color: $Clr-light;
@@ -77,13 +78,8 @@ header {
     position: relative;
     transition: .3s;
     background-size: cover;
-    .overlay {
-        // background-color: #000;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-    button {
+    background-blend-mode: overlay;
+    .slider-btn {
         background: rgba(0, 0, 0, 0.3098039216);
         outline: none;
         font-size: 17px;

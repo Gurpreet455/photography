@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function changeBackground(index) {
     currentIndex = (index + images.length) % images.length;
     slider.style.backgroundImage =
-      "url('" + imgPath + images[currentIndex] + "')";
+      "url('" + imgPath + images[currentIndex] + "'), linear-gradient(182deg, rgb(0 0 0 / 69%), rgb(0 0 0 / 72%)";
   }
 
   function nextBackground() {
@@ -34,9 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial background image
   slider.style.backgroundImage =
-    "url('" + imgPath + images[currentIndex] + "')";
+    "url('" + imgPath + images[currentIndex] + "'), linear-gradient(182deg, rgb(0 0 0 / 69%), rgb(0 0 0 / 72%)";
 });
-
 // clr mode
 
 //darkmode

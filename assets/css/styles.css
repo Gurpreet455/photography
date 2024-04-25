@@ -68,6 +68,7 @@ header {
   position: relative;
   transition: 0.3s;
   background-size: cover;
+  background-blend-mode: overlay;
 }
 header .overlay {
   height: 100%;

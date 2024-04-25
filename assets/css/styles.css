@@ -171,8 +171,39 @@ header button.next-button {
   margin: 10px 2px;
 }
 
-.side-border-img {
-  border-radius: 0px 50px 50px 0px;
+.side-img {
+  border-radius: 15px;
+  max-width: 450px;
+}
+
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider .slide {
+  display: none;
+}
+.slider .active {
+  display: block;
+}
+.slider .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+}
+.slider .prev {
+  left: 10px;
+}
+.slider .next {
+  right: 10px;
 }
 
 @media (max-width: 768px) {

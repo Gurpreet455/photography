@@ -180,8 +180,69 @@ header {
     margin: 10px 2px;
 }
 
-.side-border-img {
-    border-radius: 0px 50px 50px 0px;
+.side-img {
+    border-radius: 15px;
+    max-width: 450px;
+}
+
+// .carousel-container {
+//     overflow: hidden;
+//     width: 100%;
+//     position: relative;
+//     .carousel {
+//         display: flex;
+//         transition: transform 0.5s ease;
+//     }
+//     .slide {
+//         flex: 0 0 auto;
+//         width: 100%;
+//         /* Adjust the width of each slide as needed */
+//     }
+//     button {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         background-color: rgba(0, 0, 0, 0.5);
+//         color: white;
+//         border: none;
+//         padding: 10px 20px;
+//         cursor: pointer;
+//     }
+//     .prev {
+//         left: 0;
+//     }
+//     .next {
+//         right: 0;
+//     }
+// }
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    .slide {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        outline: none;
+    }
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
 }
 
 @media (max-width: 1440px) {}
